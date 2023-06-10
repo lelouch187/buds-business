@@ -1,6 +1,7 @@
 .header{
    position: sticky;
-   top: -38px;
+   top: -39px;
+   z-index: 10000;
 
 &__bottom {
    display: flex;

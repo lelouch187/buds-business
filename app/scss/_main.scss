@@ -1,5 +1,7 @@
 .main{
    position: relative;
+   display: flex;
+   justify-content: space-between;
    height: 591px;
    background-color: $grayscale-color-01;
    &__text {
@@ -24,8 +26,9 @@
       margin-bottom: 40px;
    }
    &__img_wrapper {
-      position: absolute;
-      right: 0;
-      bottom: -4px;
+      display: flex;
+   }
+   &__img{
+
    }
 }
