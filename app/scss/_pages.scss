@@ -1,0 +1,24 @@
+.pages {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   height: 38px;
+   padding: 0px 60px;
+   background-color: $secondary-color-02;
+}
+.pages__menu_list {
+   display: flex;
+}
+.pages__menu_item {
+   padding: 9px 40px;
+}
+.pages__menu_item.active {
+   background-color: $grayscale-color-01;
+   border-radius: 20px 20px 0px 0px;
+   color: $grayscale-color-07
+}
+.pages__menu_link {
+   font-weight: 500;
+   font-size: 16px;
+   cursor: pointer;
+}
