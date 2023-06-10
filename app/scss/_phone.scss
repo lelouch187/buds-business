@@ -1,0 +1,90 @@
+.phone {
+   padding: 100px 0;
+   background-color: $grayscale-color-01;
+   font-weight: 700;
+   font-size: 128px;
+   min-height:816px;;
+   line-height: 106%;
+   font-feature-settings: 'liga' off;
+   position: relative;
+   overflow: hidden;
+   &__right_1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 20px;
+      position: absolute;
+      height: 136px;
+      left: -236px;
+      top: 136px;
+   }
+   &__left_1 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 20px;
+      position: absolute;
+      height: 136px;
+      left: -80px;
+      top: 340px;
+   }
+   &__text_black {
+      width: 1049px;
+      height: 136px;
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 106%;
+      font-feature-settings: 'liga' off;
+      text-shadow:
+    0.5px  0.5px 1px #444444,
+    0.5px -0.5px 1px #444444,
+   -0.5px  0.5px 1px #444444,
+   -0.5px -0.5px 1px #444444;
+   }
+   &__text_green {
+      font-family: 'Outfit';
+      font-style: normal;
+      width: 1049px;
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 106%;
+      font-feature-settings: 'liga' off;
+      color: $secondary-color-01;
+   }
+   &__text_purple {
+      font-weight: 700;
+      font-size: 128px;
+      width: 1049px;
+      line-height: 106%;
+      font-feature-settings: 'liga' off;
+      color: $primary-color-02;
+   }
+   &__right_2 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 20px;
+      position: absolute;
+      height: 136px;
+      left: -527px;
+      top: 544px;
+   }
+   &__text_orange {
+      font-weight: 700;
+      font-size: 128px;
+      width: 1049px;
+      line-height: 106%;
+      font-feature-settings: 'liga' off;
+      color: $secondary-color-02;
+   }
+   &__wrapper{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 107px;
+   }
+}
