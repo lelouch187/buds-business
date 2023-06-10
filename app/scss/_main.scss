@@ -1,0 +1,31 @@
+.main{
+   position: relative;
+   height: 591px;
+   background-color: $grayscale-color-01;
+   &__text {
+      padding-top: 82px;
+      width: 671px;
+      margin-left: 110px;
+   }
+   &__title {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 106%;
+      font-feature-settings: 'liga' off;
+      color: $grayscale-color-07;
+      margin-bottom: 20px;
+   }
+   &__subtitle {
+      width: 540px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      color: $grayscale-color-07;
+      margin-bottom: 40px;
+   }
+   &__img_wrapper {
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+   }
+}

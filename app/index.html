@@ -3,30 +3,43 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Buds</title>
    <link rel="stylesheet" href="../css/style.min.css" />
 </head>
 <body>
-   <section class="pages">
-      <nav class="pages__menu">
-         <ul class="pages__menu_list">
-            <li class="pages__menu_item active">
-               <a class="pages__menu_link">For Business</a>
-            </li>
-            <li class="pages__menu_item">
-               <a class="pages__menu_link">For Customers</a>
-            </li>
-         </ul>
-      </nav>
-   </section>
    <header class="header">
+      <div class="header__top">
+         <nav class="top__menu">
+            <ul class="top__menu_list">
+               <li class="top__menu_item active">
+                  <a class="top__menu_link">For Business</a>
+               </li>
+               <li class="top__menu_item">
+                  <a class="top__menu_link">For Customers</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+         <div class="header__bottom">
       <div class="header__logo-wrapper">
          <img class="header__logo"
          src="../images/buds-logo.svg" alt="logo" />
       </div>
-      <button class="header__button button_primary">
+      <button class="header__button button_primary--dark">
          Contact sales
       </button>
+   </div>
    </header>
+   <section class="main">
+      <div class="main__text">
+         <h1 class="main__title">Everyone<br> is an Influencer</h1>
+         <p class="main__subtitle">Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
+         <button class="main__button button_primary--dark">Contact sales</button>
+      </div>
+      <div class="main__img_wrapper">
+         <img class="main__img"
+         src="../images/main.webp" alt="main"/>
+      </div>
+   </section>
 </body>
 </html>

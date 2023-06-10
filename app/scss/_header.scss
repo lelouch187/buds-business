@@ -1,7 +1,9 @@
-.header {
-   display: flex;
+.header{
    position: sticky;
-   top: 0;
+   top: -38px;
+
+&__bottom {
+   display: flex;
    justify-content: space-between;
    padding: 7px 60px;
    height: 71px;
@@ -11,4 +13,29 @@
       width: 155px;
       height: 49px;
    }
+}
+&__top {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   height: 38px;
+   padding: 0px 60px;
+   background-color: $secondary-color-02;
+}
+}
+.top__menu_list {
+   display: flex;
+}
+.top__menu_item {
+   padding: 9px 40px;
+}
+.top__menu_item.active {
+   background-color: $grayscale-color-01;
+   border-radius: 20px 20px 0px 0px;
+   color: $grayscale-color-07
+}
+.top__menu_link {
+   font-weight: 500;
+   font-size: 16px;
+   cursor: pointer;
 }
