@@ -1,0 +1,29 @@
+.statistic {
+   height: 222px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $primary-color-01;
+   padding: 40px 0;
+}
+.statistic__items {
+   display: flex;
+   justify-content: center;
+   color: $grayscale-color-07;
+}
+.statistic__item {
+   display: flex;
+   flex-direction: column;
+   margin-right: 100px;
+}
+.statistic__number {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 106%;
+   font-feature-settings: 'liga' off;
+}
+.statistic__text {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+}
