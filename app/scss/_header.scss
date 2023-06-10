@@ -1,0 +1,14 @@
+.header {
+   display: flex;
+   position: sticky;
+   top: 0;
+   justify-content: space-between;
+   padding: 7px 60px;
+   height: 71px;
+   align-items: center;
+   background-color: $grayscale-color-01;
+   &__logo {
+      width: 155px;
+      height: 49px;
+   }
+}
