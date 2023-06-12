@@ -1,0 +1,46 @@
+<div class="modal">
+   <form class="modal__form">
+      <div class="form__element">
+         <p class="input__title">Name <span class="input__requie">*</span></p>
+         <input class="modal__input input__name"
+         placeholder="Enter name"
+         />
+         <p class="modal__input__error">This field is required.</p>
+      </div>
+      <div class="form__element">
+         <p class="input__title">Email <span class="input__requie">*</span></p>
+         <input class="modal__input input__email"
+         placeholder="Enter email"
+         />
+         <p class="modal__input__error">This field is required.</p>
+      </div>
+      <div class="form__element form__phone">
+         <p class="input__title">Phone number <span class="input__requie">*</span></p>
+         <input type="tel"
+         class="modal__input input__phone"
+         placeholder=" + 7 900 000 00 00 "
+         />
+         <img class="flag"
+         src="../images/russian-federation.svg"
+         alt="russian"/>
+         <p class="modal__input__error">This field is required.</p>
+      </div>
+      <div class="form__element">
+         <p class="input__title">Company</p>
+         <input class="modal__input input__company"
+         placeholder="Enter company"
+         />
+      </div>
+      <div class="form__element">
+         <p class="input__title">Website/Store URL</p>
+         <input class="modal__input input__site"
+         placeholder="Enter Website/Store URL"
+         />
+      </div>
+      <p class="modal__error">Please fill in all required fields</p>
+      <p class="modal__info">By submitting this form you are agreeing to Budss’s <a href="#" class="modal__link">Privacy Policy</a> and <a href="#" class="modal__link">Terms of Use</a></p>
+      <button disabled class="modal__button button_primary--dark">Contact sales</button>
+   </form>
+   <img src="../images/cookie-close.svg" alt="close"
+   class="close modal__close" />
+</div>

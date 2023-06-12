@@ -224,11 +224,66 @@
    <div class="cookie">
       <p class="cookie__text">This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
       <div class="cookie__buttons">
-         <button class="cookie__button_assept button_primary--dark cookie__button">Accept</button>
-         <button class="cookie__button_cansel button_primary--dark cookie__button" >Decline</button>
+         <button class="cookie__button_assept cookie__button">Accept</button>
+         <button class="cookie__button_cansel cookie__button" >Decline</button>
       </div>
       <img src="../images/cookie-close.svg" alt="close"
-      class="cookie__close cookie__button" />
+      class="close cookie__button" />
+   </div>
+   <div class="modal">
+      <form class="modal__form">
+         <div class="form__element">
+            <p class="input__title">Name <span class="input__requie">*</span></p>
+            <input class="modal__input input__name"
+            placeholder="Enter name"
+            />
+            <p class="modal__input__error">This field is required.</p>
+         </div>
+         <div class="form__element">
+            <p class="input__title">Email <span class="input__requie">*</span></p>
+            <input class="modal__input input__email"
+            placeholder="Enter email"
+            />
+            <p class="modal__input__error">This field is required.</p>
+         </div>
+         <div class="form__element form__phone">
+            <p class="input__title">Phone number <span class="input__requie">*</span></p>
+            <input type="tel"
+            class="modal__input input__phone"
+            placeholder=" + 7 900 000 00 00 "
+            />
+            <img class="flag"
+            src="../images/russian-federation.svg"
+            alt="russian"/>
+            <p class="modal__input__error">This field is required.</p>
+         </div>
+         <div class="form__element">
+            <p class="input__title">Company</p>
+            <input class="modal__input input__company"
+            placeholder="Enter company"
+            />
+         </div>
+         <div class="form__element">
+            <p class="input__title">Website/Store URL</p>
+            <input class="modal__input input__site"
+            placeholder="Enter Website/Store URL"
+            />
+         </div>
+         <p class="modal__error">Please fill in all required fields</p>
+         <p class="modal__info">By submitting this form you are agreeing to Budss’s <a href="#" class="modal__link">Privacy Policy</a> and <a href="#" class="modal__link">Terms of Use</a></p>
+         <button disabled class="modal__button button_primary--dark">Contact sales</button>
+      </form>
+      <img src="../images/cookie-close.svg" alt="close"
+      class="close modal__close" />
+   </div>
+   <div class="modal_succsess">
+      <img class="modal_succsess__img"
+      src="../images/modal-suc.svg" alt="success" />
+      <h4 class="modal_succsess__title">Thank you!</h4>
+      <p class="modal_succsess__text">Thank you, we have received your application and will contact you soon!</p>
+      <button class="modal_succsess__button">Super!</button>
+      <img src="../images/cookie-close.svg" alt="close"
+      class="close modal_succsess__close" />
    </div>
    <script src="../js/main.min.js"></script> 
 </body>
