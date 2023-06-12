@@ -16,6 +16,7 @@
       font-feature-settings: 'liga' off;
       color: $grayscale-color-07;
       margin-bottom: 20px;
+      width: 671px;
    }
    &__subtitle {
       width: 540px;
@@ -29,6 +30,6 @@
       display: flex;
    }
    &__img{
-
+      max-width: 595px;
    }
 }
