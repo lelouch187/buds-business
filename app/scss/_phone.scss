@@ -3,7 +3,7 @@
    background-color: $grayscale-color-01;
    font-weight: 700;
    font-size: 128px;
-   min-height:816px;;
+   min-height:816px;
    line-height: 106%;
    font-feature-settings: 'liga' off;
    position: relative;
@@ -86,5 +86,59 @@
       left: 50%;
       transform: translateX(-50%);
       top: 107px;
+   }
+}
+@media (max-width:768px){
+   .phone{
+      min-height: 540px;
+      margin: 0;
+      &__wrapper{
+         width: 228px;
+         height: 461px;
+         top: 40px;
+         img{
+            width: 228px;
+            height: 461px;
+         }
+      }
+      &__right_1 {
+         width: 1000px;
+         left: -160px;
+         top: 101px;
+      }
+      &__left_1 {
+         width: 1204px;
+         left: -272px;
+         top: 245px;
+      }
+      &__text_black {
+         display: inline-block;
+         width: 33%;
+         height: 51px;
+         font-size: 48px;
+      }
+      &__text_green {
+         display: inline-block;
+         width: 33%;
+         height: 51px;
+         font-size: 48px;
+      }
+      &__text_purple {
+         display: inline-block;
+         font-size: 48px;
+         height: 51px;
+         width: 33%;
+      }
+      &__right_2 {
+         width: 1000px;
+         left: -261px;
+         top: 389px;
+      }
+      &__text_orange {
+         display: inline-block;
+         height: 51px;
+         font-size: 48px;
+         width: 33%;
+      }
    }
 }

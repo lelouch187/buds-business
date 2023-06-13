@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
    cookitBtns.forEach((item)=>item.addEventListener('click',()=>{
       cookie.classList.add('hide')
    }))
+   const burger = document.querySelector('.header__aside')
+   const aside = document.querySelector('.aside')
+   const closeAside = document.querySelector('.aside__close')
+   const navigAside = document.querySelectorAll('.aside__navigate__link')
    const modal = document.querySelector('.modal')
    const allBtns = document.querySelectorAll('.button_primary--dark')
    const name =  document.querySelector('.input__name')
@@ -55,6 +59,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
    }
    allBtns.forEach((item)=>{
       item.addEventListener('click',()=>{
+       aside.style.transform='translateX(-100%)'
          sucModal.classList.remove('active')
          if(!item.classList.contains('modal__button')){
             modal.classList.add('active')
@@ -158,4 +163,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         phoneInput.addEventListener('input', onPhoneInput, false);
         phoneInput.addEventListener('paste', onPhonePaste, false);
     }
+    burger.addEventListener('click',()=>{
+      aside.style.transform='translateX(0)'
+    })
+    closeAside.addEventListener('click',()=>{
+      aside.style.transform='translateX(-100%)'
+    })
+   navigAside.forEach(item=>{
+      item.addEventListener('click',()=>{
+         aside.style.transform='translateX(-100%)'
+       })
+   })
 });

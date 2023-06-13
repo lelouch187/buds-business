@@ -134,3 +134,43 @@
 .cookie.hide{
    display: none;
 }
+@media (max-width: 1100px) {
+  .cookie{
+    flex-direction: column;
+  }
+  .cookie__text {
+    width: auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width:768px){
+  .cookie{
+    flex-direction: column;
+    margin: 0;
+    width: 335px;
+    right: 0;
+    left: 10px;
+    padding: 30px 20px;
+  }
+  .cookie__text {
+    font-size: 20px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .cookie__buttons {
+    flex-direction: column;
+  }
+  .cookie__button_assept {
+    margin-right: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .cookie__button_cansel {
+    justify-content: center;
+  }
+  .close {
+    top: 10px;
+    right: 10px;
+  } 
+}

@@ -97,3 +97,9 @@
 .modal__input__error.error{
    display: block;
 }
+@media (max-width:1000px) {
+   .modal.active{
+      min-width: 335px;
+   }
+   
+}

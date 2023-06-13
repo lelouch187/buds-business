@@ -10,10 +10,13 @@
    height: 71px;
    align-items: center;
    background-color: $grayscale-color-01;
-   &__logo {
-      width: 155px;
-      height: 49px;
-   }
+}
+&__logo-wrapper {
+   width: 155px;
+   height: 49px;
+}
+&__logo{
+   width: 100%;
 }
 &__top {
    display: flex;
@@ -44,4 +47,60 @@
 }
 .top__menu_item.active .top__menu_link{
    color: $grayscale-color-07
+}
+.header__aside{
+   display: none;
+}
+
+@media (max-width:768px) {
+   .header__button{
+      display: none;
+   }
+   .header{
+      &__logo-wrapper {
+         width: 124px;
+         height: 39px;
+      }
+      &__logo{
+         width: 100%;
+      }
+      &__bottom{
+         padding: 7px 16px;
+      }
+      &__top{
+         padding: 0;
+      }
+      &__aside{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 24px;
+         height: 20px;
+         cursor:pointer;
+      }
+      &__span-1{
+         display: inline-block;
+         width: 100%;
+         height: 2px;
+         background: $grayscale-color-07;
+         border-radius: 8px;
+      }
+      &__span-2{
+         display: inline-block;
+         width: 100%;
+         height: 2px;
+         background: $grayscale-color-07;
+         border-radius: 8px;
+      }
+      &__span-3{
+         display: inline-block;
+         width: 100%;
+         height: 2px;
+         background: $grayscale-color-07;
+         border-radius: 8px;
+      }
+   }
+}
+@media (max-width:376px) {
+   
 }

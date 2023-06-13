@@ -73,3 +73,25 @@
          background-color: $primary-color-00;
        }
 }
+@media (max-width:500px) {
+  .modal_succsess.active{
+    max-width: 335px;
+    padding: 40px;
+  }
+  .modal_succsess__title {
+    font-size: 24px;
+    line-height: 120%;
+ }
+ .modal_succsess__text {
+  font-size: 20px;
+  line-height: 120%;
+  width: 295px;
+ }
+ .modal_succsess__img{
+  width: 229px;
+  height: 179px;
+ }
+ .modal_succsess__button{
+  width: 100%;
+ }
+}

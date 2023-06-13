@@ -1,10 +1,10 @@
 .statistic {
-   height: 222px;
+   min-height: 222px;
    display: flex;
    align-items: center;
    justify-content: center;
    background-color: $primary-color-01;
-   padding: 40px 0;
+   padding: 40px 13px 40px 16px;
 }
 .statistic__items {
    display: flex;
@@ -26,4 +26,33 @@
    font-weight: 600;
    font-size: 24px;
    line-height: 120%;
+}
+@media (max-width:768px) {
+   .statistic__items {
+      flex-direction: column;
+      width: 100%;
+   }
+   .statistic__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      margin-right: 0px;
+      width: 100%;
+      margin-bottom: 40px;
+      &:last-child{
+         margin-bottom: 0px;
+      }
+   }
+   .statistic__number {
+      font-size: 40px;
+      margin-right: 20px;
+   }
+   .statistic__text {
+      font-size: 20px;
+      line-height: 25px;
+   }
+   br{
+      display: none;
+   }
 }
